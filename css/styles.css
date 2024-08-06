@@ -1,141 +1,156 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scrollbar-color: rgba(0,0,0,.2) rgba(0,0,0,.1);
+  scrollbar-width: thin;
 }
-body{
-    width: 100%;
-    height: 100%;
-    background: rgb(170, 170, 170);
+body {
+  font-size: 14px;
+
+  font-family: Roboto,sans-serif;
+
 }
-header{
-   display: block;
-    width: calc(100% - 265px);
-    height:68px;
-    background: #fff;
-    float: right;
-    overflow: hidden;
+
+main {
+	width: calc(100% - 265px);
+	margin-left: 265px;
+	background-color: #eaeaea;
 }
-.header-content .text{
-    display: flex;
+
+header {
+	width: 100%;
+	z-index: 1;
+	background: #fff;
+	height: 68px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
-.edu-text{
-    font-size: 28px;
-    margin-bottom: 0;
-    margin:15px 0px 0px 10px;
+
+header .welcome {
+	margin-left: 30px;
+	font-size: 26px;
+	font-weight: bolder;
 }
-.header-content{
-    display: flex;
-    text-align: right;
-    padding-right: 20px;
-    margin-bottom: 0;
-    margin-left: auto;
-    justify-content: space-between;
+header .pro-detls {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
 }
-.header-content .profile{
-    font-weight: 600;
-    line-height: 45px;
-    color: gray;
-    font-size: 15px;
-    border: 1px solid gray;
-    border-radius:50%;
-    width: 50px;
-    height: 50px;
-    margin-top: 10px;
-    overflow: hidden;
-    box-shadow: 0 3px 10px gray;
-  
+
+header .pro-detls {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
 }
-.header-profile{
-    display: flex;
-    margin-right: 20px;
+nav {
+  width: 265px;
+  height: 100vh;
+  background-color: #0077be;
+  position: fixed;
+  text-align: center;
+  padding: 20px 0;
 }
-.header-profile .profile figure{
-    border-radius: 50%;
-    margin: auto;
-    height: auto;
+nav .edulogo {
+  padding: 0 10px 25px;
 }
-.profile img{
-    width: 50px;
+nav .edulogo img {
+  width: 100%;
 }
-figure img{
-    max-width: 100px;
-    vertical-align: middle;
+img {
+  max-width: 100%;
 }
-.pro-text{
-    margin: 20px 5px;
+nav > ul {
+  padding: 0;
+  overflow: auto;
+  height: calc(100% - 175px);
 }
-nav{
-    width: 265px;
-    height: 100%;
-    background: #236d90;
-    position: fixed;
-}
-nav .left-nav{
-    display: flex;
-    justify-content: center;
-}
-.head-log{
-   padding: 10px;
-    max-width: 100%;
-}
-/* .icon{
-   
-    display: flex;
-}
- .icon-head{
-    position: relative;
-    margin-left:5px;
-}
-.icon .fa-caret-down{
-  font-size: 26px;
-  color: rgb(35, 35, 35);
-  margin-top: 20px;
+nav > ul > li {
+  border-bottom: 1px solid #f1f1f142;
+  color: #fff;
+  text-align: start;
   cursor: pointer;
-} */
-.icon-bell{
-    position: relative;
-    margin-top: 23px;
 }
-.fa-bell{
-color:rgb(35, 35, 35);
-font-size: 25px;
+li {
+  list-style-type: none;
 }
-.main-section{
-     display: flex;
-     float: right;
-     width: calc(100% - 265px);
-     padding-top: 30px;
+nav .mmslogo {
+  padding: 0 10px 25px;
 }
-.card-body{
-    height:220px;
-    text-align: center;
+nav .mmslogo a {
+  color: #fff;
+  text-decoration: none;
+  text-align: left;
+  display: block;
 }
-.card-body i{
-   font-size: 40px;
-   color: #236d90;
+nav ul li .mn {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
 }
-.dropdown {
-    position: relative;
-    display: inline-block;
-    margin-top: 20px;
-    margin-left: 5px;
+nav ul li:hover .mn {
+  background-color: #000;
 }
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color:red;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+nav ul li span i {
+  font-size: 18px;
+  margin-right: 10px;
 }
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
+nav ul li i {
+  color: #f68a03;
 }
 
+nav ul li .fa-angle-down {
+  display: none;
+}
+.fa-solid, .fas {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+}
+header .pro-detls .dropdown button img {
+  width: 60px;
+  margin-top: 5px;
+}
 
-
-
+img {
+  max-width: 100%;
+}
+img, svg {
+  vertical-align: middle;
+}
+header .pro-detls .dropdown .dropdown-menu {
+  box-shadow: 0 2px 4px -1px #0003,0 4px 5px #00000024,0 1px 10px #0000001f;
+  border: 0;
+  border-radius: 5px;
+  min-width: 11.5rem;
+  padding: .5rem 0;
+}
+.dropdown-menu.show {
+  display: block;
+}
+.dropdown-menu {
+  z-index: 1000;
+  font-size: 1rem;
+  color: #212529;
+  text-align: left;
+  list-style: none;
+  background-color: #fff;
+  background-clip: padding-box;
+}
+header .pro-detls .dropdown .dropdown-menu li a {
+  color: #333;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 13px 16px;
+  text-decoration: none;
+  width: 100%;
+  float: left;
+}
+header .pro-detls .dropdown .dropdown-menu li a i {
+  margin-right: 10px;
+}
+header .pro-detls .dropdown .dropdown-menu li {
+  display: block;
+  width: 100%;
+  float: left;
+}
