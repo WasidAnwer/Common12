@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background: rgb(170, 170, 170);
+}
+header{
+   display: block;
+    width: calc(100% - 265px);
+    height:68px;
+    background: #fff;
+    float: right;
+    overflow: hidden;
+}
+.header-content .text{
+    display: flex;
+}
+.edu-text{
+    font-size: 28px;
+    margin-bottom: 0;
+    margin:15px 0px 0px 10px;
+}
+.header-content{
+    display: flex;
+    text-align: right;
+    padding-right: 20px;
+    margin-bottom: 0;
+    margin-left: auto;
+    justify-content: space-between;
+}
+.header-content .profile{
+    font-weight: 600;
+    line-height: 45px;
+    color: gray;
+    font-size: 15px;
+    border: 1px solid gray;
+    border-radius:50%;
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px gray;
+  
+}
+.header-profile{
+    display: flex;
+    margin-right: 20px;
+}
+.header-profile .profile figure{
+    border-radius: 50%;
+    margin: auto;
+    height: auto;
+}
+.profile img{
+    width: 50px;
+}
+figure img{
+    max-width: 100px;
+    vertical-align: middle;
+}
+.pro-text{
+    margin: 20px 5px;
+}
+nav{
+    width: 265px;
+    height: 100%;
+    background: #236d90;
+    position: fixed;
+}
+nav .left-nav{
+    display: flex;
+    justify-content: center;
+}
+.head-log{
+   padding: 10px;
+    max-width: 100%;
+}
+/* .icon{
+   
+    display: flex;
+}
+ .icon-head{
+    position: relative;
+    margin-left:5px;
+}
+.icon .fa-caret-down{
+  font-size: 26px;
+  color: rgb(35, 35, 35);
+  margin-top: 20px;
+  cursor: pointer;
+} */
+.icon-bell{
+    position: relative;
+    margin-top: 23px;
+}
+.fa-bell{
+color:rgb(35, 35, 35);
+font-size: 25px;
+}
+.main-section{
+     display: flex;
+     float: right;
+     width: calc(100% - 265px);
+     padding-top: 30px;
+}
+.card-body{
+    height:220px;
+    text-align: center;
+}
+.card-body i{
+   font-size: 40px;
+   color: #236d90;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 5px;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:red;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+
+
+

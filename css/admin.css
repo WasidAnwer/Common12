@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    height: 100%;
+}
+/* *********************************************** */
+/* *******************Head-banner***************** */
+/* *********************************************** */
+.login-banner {
+        background: #2583c1;
+        height: 110px;
+        display: flex;
+        align-items: center;
+}
+.login-banner-text {
+    width: 50%;
+    display: table;
+    margin: auto;
+    color: #fff;
+    text-align: center;
+}
+.login-banner-text h1{
+    font-weight: 700;
+    font-size: 26px;
+}
+
+.login-banner-text img {
+    width: 65%;
+}
+img {
+    max-width: 100%;
+}
+
+/* *********************************************** */
+/* ***************Head-banner-End***************** */
+/* *********************************************** */
+.login-content {
+    padding: 50px 0;
+    background: #f1f1f1;
+    height: 80%;
+    display: flex;
+    align-items: center;
+}
+.login-form {
+    width: 60%;
+    background: #fff;
+    display: table;
+    margin: auto;
+    border-radius: 8px;
+    padding-bottom: 25px;
+}
+.login-form span.std-img{
+    width: 100%;
+    float: left;
+    margin-top: -30px;
+
+}
+.login-form figure{
+    width: 100%;
+    text-align: center;
+}
+.login-form figure img {
+    width: 140px;
+}
+.login-form .log-form {
+    width: 300px;
+    display: table;
+    margin: auto;
+    padding: 20px 0;
+}
+.login-form .log-form input {
+    width: 100%;
+    height: 40px;
+    float: left;
+    color: #5b5b5b;
+    font-weight: 700;
+    background: #f1f1f1;
+    font-size: 15px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    text-align: center;
+    border: 1px solid #ebebeb;
+    box-shadow: 0 2px 5px rgba(207, 207, 207, 0.568);
+}
+.cls_showerror{
+    text-align: center;
+    color: #ff0000;
+    font-weight: 700;
+    margin: 10px 0;
+}
+.cls_showsucess {
+    text-align: center;
+    color: green;
+    font-weight: 700;
+    margin: 10px 0;
+}
+.login-form .login-submit {
+    width: 100%;
+    display: table;
+    margin: auto;
+}
+.login-form .login-submit .login-button {
+    width: 100%;
+    float: left;
+    height: 40px;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 16px;
+    background: #236d90;
+    border: 1px solid #236d90;
+    box-shadow: 0 2px 5px rgb(167, 167, 167);
+    cursor: pointer;
+    font-weight: 600;
+}
+.login-form .log-form input:focus {
+    border: 1px solid #ccc;
+    box-shadow: 0 0 4px #c9c9c9 inset;
+    outline: none;
+}
